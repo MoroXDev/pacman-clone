@@ -1,0 +1,18 @@
+{
+  "version": 8,
+  "configurePresets": [
+    {
+      "name": "schnitzel",
+      "displayName": "Clang 19.1.7 x86_64-w64-windows-gnu (clang64)",
+      "description": "Using compilers: C = D:\\msys64\\clang64\\bin\\clang.exe, CXX = D:\\msys64\\clang64\\bin\\clang++.exe",
+      "binaryDir": "${sourceDir}/out/build/${presetName}",
+      "generator": "Ninja",
+      "cacheVariables": {
+        "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}",
+        "CMAKE_C_COMPILER": "D:/msys64/clang64/bin/clang.exe",
+        "CMAKE_CXX_COMPILER": "D:/msys64/clang64/bin/clang++.exe",
+        "CMAKE_BUILD_TYPE": "Debug"
+      }
+    }
+  ]
+}

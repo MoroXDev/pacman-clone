@@ -1,0 +1,3 @@
+H:/Users/szcze/AppData/Local/Programs/VS Code projects/C++/pac-man/out/build/schnitzel/CMakeFiles/pac-man.dir
+H:/Users/szcze/AppData/Local/Programs/VS Code projects/C++/pac-man/out/build/schnitzel/CMakeFiles/edit_cache.dir
+H:/Users/szcze/AppData/Local/Programs/VS Code projects/C++/pac-man/out/build/schnitzel/CMakeFiles/rebuild_cache.dir

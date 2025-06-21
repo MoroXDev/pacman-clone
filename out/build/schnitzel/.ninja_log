@@ -1,0 +1,7 @@
+# ninja log v6
+3	29	7722497450993053	H:/Users/szcze/AppData/Local/Programs/VS Code projects/C++/pac-man/out/build/schnitzel/CMakeFiles/cmake.verify_globs	a400a1fb11c05277
+55	1447	7722461930547988	CMakeFiles/pac-man.dir/src/main.cpp.obj	dc2ee7c982071fe4
+1321	1827	7722497464143397	H:/Users/szcze/AppData/Local/Programs/VS Code projects/C++/pac-man/pac-man.exe	252f08f401de848f
+30	756	7722501755713454	build.ninja	f91688f75901232
+63	1372	7722297840586510	CMakeFiles/pac-man.dir/src/pacman.cpp.obj	2676012150de7d4f
+49	1321	7722497451408914	CMakeFiles/pac-man.dir/src/ghost.cpp.obj	fcc2cecd32b8a132
