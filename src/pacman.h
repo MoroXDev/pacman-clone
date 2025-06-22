@@ -3,7 +3,7 @@
 
 struct Pacman : public Entity
 {
-  SDL_FPoint input_dir = DIR_UP;
+  SDL_Point input_dir = DIR_UP;
   void input_control(const Uint8 * keystates);
 
   Pacman()

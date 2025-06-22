@@ -62,8 +62,27 @@ void render(Pacman &pacman, std::array<Ghost *, 4> &ghosts)
     SDL_RenderPresent(renderer);
 }
 
+void set_mode()
+{
+    if (ghosts_target_mode == CHASE)
+        std::cout << "chase" << std::endl;
+    if (ghosts_target_mode == SCATTER)
+        std::cout << "scatter" << std::endl;
+    if (ghosts_target_mode == FREIGHT)
+        std::cout << "freight" << std::endl;
+
+    using namespace std::chrono;
+    if (duration_cast<seconds>(steady_clock::now() - target_mode_start) > mode_periods[ghosts_target_mode])
+    {
+        mode_change_count++;
+        ghosts_target_mode = (TARGET_MODE)(mode_change_count % 2);
+        target_mode_start = steady_clock::now();
+    }
+}
+
 void update(Pacman &pacman, std::array<Ghost *, 4> &ghosts)
 {
+    set_mode();
     pacman.anim();
     pacman.collect_dots();
     pacman.move();
@@ -71,7 +90,7 @@ void update(Pacman &pacman, std::array<Ghost *, 4> &ghosts)
     for (auto &ghost : ghosts)
     {
         ghost->anim();
-        ghost->set_target(pacman.center, pacman.dir);
+        ghost->set_chase_target(pacman.center, pacman.dir);
         ghost->move();
     }
 }
@@ -127,7 +146,11 @@ int main(int argc, char *argv[])
     init_assets();
 
     Pacman pacman;
-    std::array<Ghost *, 4> ghosts = {new Blinky(), new Pinky(), new Inky(), new Clyde()};
+    std::array<Ghost *, 4> ghosts;
+    ghosts[0] = new Blinky();
+    ghosts[1] = new Pinky();
+    ghosts[2] = new Inky(ghosts[0]->center);
+    ghosts[3] = new Clyde();
 
     while (!is_exit)
     {

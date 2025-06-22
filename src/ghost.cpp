@@ -5,7 +5,10 @@
 
 void Ghost::move()
 {
-  choose_nearest_dir();
+  if (ghosts_target_mode == SCATTER)
+    choose_nearest_dir(scatter_target);
+  if (ghosts_target_mode == CHASE)
+    choose_nearest_dir(chase_target);
   center += dir * speed;
 }
 
@@ -28,17 +31,20 @@ void Ghost::anim()
   }
 }
 
-void Ghost::choose_nearest_dir()
+void Ghost::choose_nearest_dir(const SDL_Point &target)
 {
-  std::array<SDL_FPoint, 4> dirs = {DIR_UP, DIR_DOWN, DIR_LEFT, DIR_RIGHT};
-  std::pair<SDL_FPoint, float> dir_dist = {SDL_FPoint{0, 0}, 1000};
+  if (turn_cell == SDL_Point{(int)center.x, (int)center.y})
+    return;
+
+  std::array<SDL_Point, 4> dirs = {DIR_UP, DIR_DOWN, DIR_LEFT, DIR_RIGHT};
+  std::pair<SDL_Point, float> dir_dist = {dir, 1000};
 
   for (auto &dir_v : dirs)
   {
-    if (!can_move(dir_v * 0.1f)) // tutaj był problem
+    if (!can_move(dir_v * 0.1f))
       continue;
 
-    if (dir_v == (dir * -1.f))
+    if (dir_v == dir * -1)
       continue;
 
     float dist = distf(center.x + dir_v.x, center.y + dir_v.y, target.x, target.y);
@@ -48,30 +54,39 @@ void Ghost::choose_nearest_dir()
     }
   }
 
-  // if (ghost_type == "blinky")
-  //   std::cout << (dir * -1).x << " : " << (dir * -1).y << std::endl;
-  if (ghost_type == "blinky" && (int)(dir * -1).x == (int)dir_dist.first.x && (int)(dir * -1).y == (int)dir_dist.first.y)
-    SDL_assert(0);
+  if (dir_dist.first != dir)
+    turn_cell = SDL_Point{(int)center.x, (int)center.y};
+
   dir = dir_dist.first;
 }
 
-void Blinky::set_target(const SDL_FPoint &pac_center, const SDL_FPoint &pac_dir)
+void Blinky::set_chase_target(const SDL_FPoint &pac_center, const SDL_Point &pac_dir)
 {
-  target = SDL_Point{(int)pac_center.x, (int)pac_center.y};
+  chase_target = SDL_Point{(int)pac_center.x, (int)pac_center.y};
 }
 
-void Pinky::set_target(const SDL_FPoint &pac_center, const SDL_FPoint &pac_dir)
+void Pinky::set_chase_target(const SDL_FPoint &pac_center, const SDL_Point &pac_dir)
 {
   SDL_FPoint four_in_front = pac_center + pac_dir * 4;
   if (pac_dir == DIR_UP)
     four_in_front.x -= 4;
-  target = SDL_Point{(int)four_in_front.x, (int)four_in_front.y};
+  chase_target = SDL_Point{(int)four_in_front.x, (int)four_in_front.y};
 }
 
-void Inky::set_target(const SDL_FPoint &pac_center, const SDL_FPoint &pac_dir)
+void Inky::set_chase_target(const SDL_FPoint &pac_center, const SDL_Point &pac_dir)
 {
+  SDL_FPoint four_in_front = pac_center + pac_dir * 4;
+  if (pac_dir == DIR_UP)
+    four_in_front.x -= 4;
+  chase_target = SDL_Point{(int)four_in_front.x, (int)four_in_front.y};
+
+  SDL_FPoint vel = four_in_front - blinky_center;
+  chase_target += SDL_Point{(int)vel.x, (int)vel.y};
 }
 
-void Clyde::set_target(const SDL_FPoint &pac_center, const SDL_FPoint &pac_dir)
+void Clyde::set_chase_target(const SDL_FPoint &pac_center, const SDL_Point &pac_dir)
 {
+  chase_target = SDL_Point{(int)pac_center.x, (int)pac_center.y};
+  if (distf(pac_center.x, pac_center.y, center.x, center.y) < 8)
+    chase_target = scatter_target;
 }

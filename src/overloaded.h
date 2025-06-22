@@ -110,7 +110,7 @@ inline SDL_FPoint &operator+=(SDL_FPoint &point_a, const SDL_FPoint &point_b)
   return point_a;
 }
 
-inline bool operator==(const SDL_FPoint &point_a, const SDL_FPoint &point_b)
+inline bool operator==(const SDL_Point &point_a, const SDL_Point &point_b)
 {
   return (point_a.x == point_b.x) && (point_a.y == point_b.y);
 }
@@ -157,4 +157,14 @@ inline SDL_FPoint &operator-=(SDL_FPoint &point_a, const SDL_FPoint &point_b)
   point_a.x -= point_b.x;
   point_a.y -= point_b.y;
   return point_a;
+}
+
+inline SDL_Point operator-(const SDL_Point& p)
+{
+    return SDL_Point{-p.x, -p.y};
+}
+
+inline SDL_FPoint operator-(const SDL_FPoint& p)
+{
+    return SDL_FPoint{-p.x, -p.y};
 }

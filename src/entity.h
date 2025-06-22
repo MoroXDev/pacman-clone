@@ -6,7 +6,7 @@
 struct Entity
 {
   SDL_FPoint center = {0, 0};
-  SDL_FPoint dir = DIR_UP;
+  SDL_Point dir = DIR_UP;
 
   float speed = 0.001f;
   int anim_frames = 0;
