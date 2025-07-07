@@ -1,3 +1,0 @@
-H:/Users/szcze/AppData/Local/Programs/VS Code projects/C++/pac-man/out/build/GCC/CMakeFiles/pac-man.dir
-H:/Users/szcze/AppData/Local/Programs/VS Code projects/C++/pac-man/out/build/GCC/CMakeFiles/edit_cache.dir
-H:/Users/szcze/AppData/Local/Programs/VS Code projects/C++/pac-man/out/build/GCC/CMakeFiles/rebuild_cache.dir
