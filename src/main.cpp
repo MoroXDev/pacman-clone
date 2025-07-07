@@ -338,6 +338,8 @@ void init_assets()
 
     window = SDL_CreateWindow("pac-man", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, MAZE_W, MAZE_H + get_maze_off_y() + LEVEL_COUNTER_S, SDL_WINDOW_RESIZABLE);
     renderer = SDL_CreateRenderer(window, -1, 0);
+    icon = IMG_Load("icon.png");
+    SDL_SetWindowIcon(window, icon);
 
     maze = IMG_LoadTexture(renderer, "maze.png");
     sprite_sheet = IMG_LoadTexture(renderer, "graphics.png");
@@ -366,6 +368,8 @@ void free_assets()
     score_counter.destroy();
     score_label.destroy();
     high_score_counter.destroy();
+
+    SDL_FreeSurface(icon);
 
     Mix_FreeChunk(eat_dot_wav);
     Mix_FreeChunk(eat_fruit_wav);

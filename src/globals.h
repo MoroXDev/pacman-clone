@@ -64,6 +64,7 @@ inline SDL_Renderer *renderer = nullptr;
 
 inline SDL_Texture *maze = nullptr;
 inline SDL_Texture *sprite_sheet = nullptr;
+inline SDL_Surface *icon = nullptr;
 
 inline Mix_Music *siren_mus = nullptr;
 inline Mix_Music *fright_mus = nullptr;
