@@ -1,0 +1,6 @@
+# ninja log v6
+2	26	7730966658582296	H:/Users/szcze/AppData/Local/Programs/VS Code projects/C++/pac-man/out/build/GCC/CMakeFiles/cmake.verify_globs	373750a1b514f3d5
+29	419	7732402364038623	build.ninja	d7f9d0e36caebf3f
+41	2405	7730240960478944	CMakeFiles/pac-man.dir/src/ghost.cpp.obj	dbc22f90ad04645b
+59	2331	7730240960741549	CMakeFiles/pac-man.dir/src/pacman.cpp.obj	17a0b61997659e84
+49	2361	7730240960570765	CMakeFiles/pac-man.dir/src/main.cpp.obj	3e993bfd3a9c69f0

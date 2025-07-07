@@ -1,0 +1,258 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/Program Files/CMake/share/cmake-3.29/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The system is: Windows - 10.0.22631 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/Program Files/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/Program Files/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/Program Files/CMake/share/cmake-3.29/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: D:/msys64/mingw64/bin/g++.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
+      
+      The CXX compiler identification is GNU, found in:
+        H:/Users/szcze/AppData/Local/Programs/VS Code projects/C++/pac-man/out/build/GCC/CMakeFiles/3.29.0/CompilerIdCXX/a.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/Program Files/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:64 (try_compile)"
+      - "D:/Program Files/CMake/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "H:/Users/szcze/AppData/Local/Programs/VS Code projects/C++/pac-man/out/build/GCC/CMakeFiles/CMakeScratch/TryCompile-sc2zl1"
+      binary: "H:/Users/szcze/AppData/Local/Programs/VS Code projects/C++/pac-man/out/build/GCC/CMakeFiles/CMakeScratch/TryCompile-sc2zl1"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'H:/Users/szcze/AppData/Local/Programs/VS Code projects/C++/pac-man/out/build/GCC/CMakeFiles/CMakeScratch/TryCompile-sc2zl1'
+        
+        Run Build Command(s): D:/Ninja/Ninja.exe -v cmTC_b826e
+        [1/2] D:\\msys64\\mingw64\\bin\\g++.exe   -v -o CMakeFiles/cmTC_b826e.dir/CMakeCXXCompilerABI.cpp.obj -c "D:/Program Files/CMake/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp"
+        FAILED: CMakeFiles/cmTC_b826e.dir/CMakeCXXCompilerABI.cpp.obj 
+        D:\\msys64\\mingw64\\bin\\g++.exe   -v -o CMakeFiles/cmTC_b826e.dir/CMakeCXXCompilerABI.cpp.obj -c "D:/Program Files/CMake/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp"
+        Using built-in specs.
+        COLLECT_GCC=D:\\msys64\\mingw64\\bin\\g++.exe
+        Target: x86_64-w64-mingw32
+        Configured with: ../gcc-15.1.0/configure --prefix=/mingw64 --with-local-prefix=/mingw64/local --with-native-system-header-dir=/mingw64/include --libexecdir=/mingw64/lib --enable-bootstrap --enable-checking=release --with-arch=nocona --with-tune=generic --enable-mingw-wildcard --enable-languages=c,lto,c++,fortran,ada,objc,obj-c++,jit --enable-shared --enable-static --enable-libatomic --enable-threads=posix --enable-graphite --enable-fully-dynamic-string --enable-libstdcxx-backtrace=yes --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --disable-libstdcxx-pch --enable-lto --enable-libgomp --disable-libssp --disable-multilib --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-libiconv --with-system-zlib --with-gmp=/mingw64 --with-mpfr=/mingw64 --with-mpc=/mingw64 --with-isl=/mingw64 --with-pkgversion='Rev5, Built by MSYS2 project' --with-bugurl=https://github.com/msys2/MINGW-packages/issues --with-gnu-as --with-gnu-ld --disable-libstdcxx-debug --enable-plugin --with-boot-ldflags=-static-libstdc++ --with-stage1-ldflags=-static-libstdc++
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.1.0 (Rev5, Built by MSYS2 project) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b826e.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_b826e.dir/'
+         D:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.1.0/cc1plus.exe -quiet -v -iprefix D:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.1.0/ -D_REENTRANT D:/Program Files/CMake/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_b826e.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -o C:\\Users\\szcze\\AppData\\Local\\Temp\\ccYWMqci.s
+        GNU C++17 (Rev5, Built by MSYS2 project) version 15.1.0 (x86_64-w64-mingw32)
+        	compiled by GNU C version 15.1.0, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "D:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.1.0/../../../../x86_64-w64-mingw32/include"
+        ignoring duplicate directory "D:/msys64/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.1.0/../../../../include/c++/15.1.0"
+        ignoring duplicate directory "D:/msys64/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.1.0/../../../../include/c++/15.1.0/x86_64-w64-mingw32"
+        ignoring duplicate directory "D:/msys64/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.1.0/../../../../include/c++/15.1.0/backward"
+        ignoring duplicate directory "D:/msys64/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.1.0/include"
+        ignoring nonexistent directory "C:/a/msys64/mingw64/include"
+        ignoring nonexistent directory "/mingw64/include"
+        ignoring duplicate directory "D:/msys64/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.1.0/include-fixed"
+        ignoring nonexistent directory "D:/msys64/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.1.0/../../../../x86_64-w64-mingw32/include"
+        ignoring nonexistent directory "C:/a/msys64/mingw64/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         D:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.1.0/../../../../include/c++/15.1.0
+         D:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.1.0/../../../../include/c++/15.1.0/x86_64-w64-mingw32
+         D:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.1.0/../../../../include/c++/15.1.0/backward
+         D:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.1.0/include
+         D:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.1.0/../../../../include
+         D:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.1.0/include-fixed\x0d
+        End of search list.\x0d
+        Compiler executable checksum: a938b2bbaf31207db78230ff2ee80ad3\x0d
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b826e.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_b826e.dir/'\x0d
+         D:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_b826e.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\szcze\\AppData\\Local\\Temp\\ccYWMqci.s\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/Program Files/CMake/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:49 (try_compile)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Check for working CXX compiler: D:/msys64/mingw64/bin/g++.exe"
+    directories:
+      source: "H:/Users/szcze/AppData/Local/Programs/VS Code projects/C++/pac-man/out/build/GCC/CMakeFiles/CMakeScratch/TryCompile-r0nftp"
+      binary: "H:/Users/szcze/AppData/Local/Programs/VS Code projects/C++/pac-man/out/build/GCC/CMakeFiles/CMakeScratch/TryCompile-r0nftp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: 'H:/Users/szcze/AppData/Local/Programs/VS Code projects/C++/pac-man/out/build/GCC/CMakeFiles/CMakeScratch/TryCompile-r0nftp'
+        
+        Run Build Command(s): D:/Ninja/Ninja.exe -v cmTC_c7e5c
+        [1/2] D:\\msys64\\mingw64\\bin\\g++.exe    -o CMakeFiles/cmTC_c7e5c.dir/testCXXCompiler.cxx.obj -c "H:/Users/szcze/AppData/Local/Programs/VS Code projects/C++/pac-man/out/build/GCC/CMakeFiles/CMakeScratch/TryCompile-r0nftp/testCXXCompiler.cxx"
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && D:\\msys64\\mingw64\\bin\\g++.exe   CMakeFiles/cmTC_c7e5c.dir/testCXXCompiler.cxx.obj -o cmTC_c7e5c.exe -Wl,--out-implib,libcmTC_c7e5c.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/Program Files/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/Program Files/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/Program Files/CMake/share/cmake-3.29/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: D:/msys64/mingw64/bin/gcc.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
+      
+      The C compiler identification is GNU, found in:
+        H:/Users/szcze/AppData/Local/Programs/VS Code projects/C++/pac-man/out/build/GCC/CMakeFiles/3.29.0/CompilerIdC/a.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/Program Files/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:64 (try_compile)"
+      - "D:/Program Files/CMake/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "H:/Users/szcze/AppData/Local/Programs/VS Code projects/C++/pac-man/out/build/GCC/CMakeFiles/CMakeScratch/TryCompile-wuccyi"
+      binary: "H:/Users/szcze/AppData/Local/Programs/VS Code projects/C++/pac-man/out/build/GCC/CMakeFiles/CMakeScratch/TryCompile-wuccyi"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'H:/Users/szcze/AppData/Local/Programs/VS Code projects/C++/pac-man/out/build/GCC/CMakeFiles/CMakeScratch/TryCompile-wuccyi'
+        
+        Run Build Command(s): D:/Ninja/Ninja.exe -v cmTC_b0287
+        [1/2] D:\\msys64\\mingw64\\bin\\gcc.exe   -v -o CMakeFiles/cmTC_b0287.dir/CMakeCCompilerABI.c.obj -c "D:/Program Files/CMake/share/cmake-3.29/Modules/CMakeCCompilerABI.c"
+        FAILED: CMakeFiles/cmTC_b0287.dir/CMakeCCompilerABI.c.obj 
+        D:\\msys64\\mingw64\\bin\\gcc.exe   -v -o CMakeFiles/cmTC_b0287.dir/CMakeCCompilerABI.c.obj -c "D:/Program Files/CMake/share/cmake-3.29/Modules/CMakeCCompilerABI.c"
+        Using built-in specs.
+        COLLECT_GCC=D:\\msys64\\mingw64\\bin\\gcc.exe
+        Target: x86_64-w64-mingw32
+        Configured with: ../gcc-15.1.0/configure --prefix=/mingw64 --with-local-prefix=/mingw64/local --with-native-system-header-dir=/mingw64/include --libexecdir=/mingw64/lib --enable-bootstrap --enable-checking=release --with-arch=nocona --with-tune=generic --enable-mingw-wildcard --enable-languages=c,lto,c++,fortran,ada,objc,obj-c++,jit --enable-shared --enable-static --enable-libatomic --enable-threads=posix --enable-graphite --enable-fully-dynamic-string --enable-libstdcxx-backtrace=yes --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --disable-libstdcxx-pch --enable-lto --enable-libgomp --disable-libssp --disable-multilib --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-libiconv --with-system-zlib --with-gmp=/mingw64 --with-mpfr=/mingw64 --with-mpc=/mingw64 --with-isl=/mingw64 --with-pkgversion='Rev5, Built by MSYS2 project' --with-bugurl=https://github.com/msys2/MINGW-packages/issues --with-gnu-as --with-gnu-ld --disable-libstdcxx-debug --enable-plugin --with-boot-ldflags=-static-libstdc++ --with-stage1-ldflags=-static-libstdc++
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.1.0 (Rev5, Built by MSYS2 project) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b0287.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_b0287.dir/'
+         D:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.1.0/cc1.exe -quiet -v -iprefix D:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.1.0/ -D_REENTRANT D:/Program Files/CMake/share/cmake-3.29/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_b0287.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -o C:\\Users\\szcze\\AppData\\Local\\Temp\\cc1DcPf8.s
+        GNU C23 (Rev5, Built by MSYS2 project) version 15.1.0 (x86_64-w64-mingw32)
+        	compiled by GNU C version 15.1.0, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "D:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.1.0/../../../../x86_64-w64-mingw32/include"
+        ignoring duplicate directory "D:/msys64/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.1.0/include"
+        ignoring nonexistent directory "C:/a/msys64/mingw64/include"
+        ignoring nonexistent directory "/mingw64/include"
+        ignoring duplicate directory "D:/msys64/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.1.0/include-fixed"
+        ignoring nonexistent directory "D:/msys64/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.1.0/../../../../x86_64-w64-mingw32/include"
+        ignoring nonexistent directory "C:/a/msys64/mingw64/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         D:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.1.0/include
+         D:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.1.0/../../../../include
+         D:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.1.0/include-fixed
+        End of search list.
+        Compiler executable checksum: 8247c9d569a5c4fff56144c6207ad95e
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b0287.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_b0287.dir/'\x0d
+         D:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_b0287.dir/CMakeCCompilerABI.c.obj C:\\Users\\szcze\\AppData\\Local\\Temp\\cc1DcPf8.s\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/Program Files/CMake/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:56 (try_compile)"
+      - "CMakeLists.txt"
+    checks:
+      - "Check for working C compiler: D:/msys64/mingw64/bin/gcc.exe"
+    directories:
+      source: "H:/Users/szcze/AppData/Local/Programs/VS Code projects/C++/pac-man/out/build/GCC/CMakeFiles/CMakeScratch/TryCompile-i70n34"
+      binary: "H:/Users/szcze/AppData/Local/Programs/VS Code projects/C++/pac-man/out/build/GCC/CMakeFiles/CMakeScratch/TryCompile-i70n34"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: 'H:/Users/szcze/AppData/Local/Programs/VS Code projects/C++/pac-man/out/build/GCC/CMakeFiles/CMakeScratch/TryCompile-i70n34'
+        
+        Run Build Command(s): D:/Ninja/Ninja.exe -v cmTC_5ad2b
+        [1/2] D:\\msys64\\mingw64\\bin\\gcc.exe    -o CMakeFiles/cmTC_5ad2b.dir/testCCompiler.c.obj -c "H:/Users/szcze/AppData/Local/Programs/VS Code projects/C++/pac-man/out/build/GCC/CMakeFiles/CMakeScratch/TryCompile-i70n34/testCCompiler.c"
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && D:\\msys64\\mingw64\\bin\\gcc.exe   CMakeFiles/cmTC_5ad2b.dir/testCCompiler.c.obj -o cmTC_5ad2b.exe -Wl,--out-implib,libcmTC_5ad2b.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/Program Files/CMake/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "D:/Program Files/CMake/share/cmake-3.29/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "D:/Program Files/CMake/share/cmake-3.29/Modules/FindThreads.cmake:99 (CHECK_CXX_SOURCE_COMPILES)"
+      - "D:/Program Files/CMake/share/cmake-3.29/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "D:/Program Files/CMake/share/cmake-3.29/Modules/FindSDL.cmake:163 (find_package)"
+      - "CMakeLists.txt:71 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "H:/Users/szcze/AppData/Local/Programs/VS Code projects/C++/pac-man/out/build/GCC/CMakeFiles/CMakeScratch/TryCompile-sor0e0"
+      binary: "H:/Users/szcze/AppData/Local/Programs/VS Code projects/C++/pac-man/out/build/GCC/CMakeFiles/CMakeScratch/TryCompile-sor0e0"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: 'H:/Users/szcze/AppData/Local/Programs/VS Code projects/C++/pac-man/out/build/GCC/CMakeFiles/CMakeScratch/TryCompile-sor0e0'
+        
+        Run Build Command(s): D:/Ninja/Ninja.exe -v cmTC_78d48
+        [1/2] D:\\msys64\\mingw64\\bin\\g++.exe -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++20 -o CMakeFiles/cmTC_78d48.dir/src.cxx.obj -c "H:/Users/szcze/AppData/Local/Programs/VS Code projects/C++/pac-man/out/build/GCC/CMakeFiles/CMakeScratch/TryCompile-sor0e0/src.cxx"
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && D:\\msys64\\mingw64\\bin\\g++.exe   CMakeFiles/cmTC_78d48.dir/src.cxx.obj -o cmTC_78d48.exe -Wl,--out-implib,libcmTC_78d48.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+...

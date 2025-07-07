@@ -5,23 +5,21 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON) 
 
  
-file(GLOB_RECURSE sources CONFIGURE_DEPENDS ${CMAKE_SOURCE_DIR}/src/*.cpp)
-file(GLOB_RECURSE sdl_libs CONFIGURE_DEPENDS ${CMAKE_SOURCE_DIR}/SDL/lib/x64/*.lib)
-file(GLOB_RECURSE sdl_image_libs CONFIGURE_DEPENDS ${CMAKE_SOURCE_DIR}/SDL_IMAGE/*.a)
+file(GLOB_RECURSE SOURCES CONFIGURE_DEPENDS ${CMAKE_SOURCE_DIR}/src/*.cpp)
 
-# set(sdl_mixer_lib ${CMAKE_SOURCE_DIR}/SDL_MIXER/libSDL2_mixer.a)
 
-add_executable (${PROJECT_NAME} ${sources})
+find_package(SDL2)
+find_package(SDL2_image)
+find_package(SDL2_mixer)
+find_package(SDL2_ttf)
 
-target_link_libraries(${PROJECT_NAME} PRIVATE ${sdl_libs} ${sdl_image_libs})
-target_link_libraries(${PROJECT_NAME} PRIVATE ${CMAKE_SOURCE_DIR}/SDL_MIXER/libSDL2_mixer.a)
-target_link_libraries(${PROJECT_NAME} PRIVATE Winmm)
-# target_link_libraries(${PROJECT_NAME} )
+add_executable (${PROJECT_NAME} ${SOURCES})
+
+target_link_libraries(${PROJECT_NAME} PRIVATE SDL2::SDL2 SDL2::SDL2main)
+target_link_libraries(${PROJECT_NAME} PRIVATE SDL2_image::SDL2_image)
+target_link_libraries(${PROJECT_NAME} PRIVATE SDL2_mixer::SDL2_mixer)
+target_link_libraries(${PROJECT_NAME} PRIVATE SDL2_ttf::SDL2_ttf)
+
 
 set_target_properties(${PROJECT_NAME} PROPERTIES RUNTIME_OUTPUT_DIRECTORY_DEBUG ${CMAKE_CURRENT_SOURCE_DIR})
 set_target_properties(${PROJECT_NAME} PROPERTIES RUNTIME_OUTPUT_DIRECTORY_RELEASE ${CMAKE_CURRENT_SOURCE_DIR})
-
-target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_SOURCE_DIR}/src)
-target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_SOURCE_DIR}/SDL/include/SDL2)
-target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_SOURCE_DIR}/SDL_IMAGE)
-target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_SOURCE_DIR}/SDL_MIXER)

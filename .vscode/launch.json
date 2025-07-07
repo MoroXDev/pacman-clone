@@ -11,7 +11,7 @@
       "program": "${workspaceFolder}/pac-man.exe",
       "args": [],
       "cwd": "${workspaceFolder}",
-      "terminal" :"external"
+      "terminal": "integrated"
     }
   ]
 }

@@ -1,0 +1,55 @@
+# ninja log v6
+3	30	7736221872791575	H:/Users/szcze/AppData/Local/Programs/VS Code projects/C++/pac-man/build/clang/CMakeFiles/cmake.verify_globs	a8758b99943800fe
+51	1692	7736221873241792	CMakeFiles/pac-man.dir/src/ghost.cpp.obj	94098023bc97963c
+67	1613	7736221873341425	CMakeFiles/pac-man.dir/src/pacman.cpp.obj	54dc4baec91899f5
+57	1685	7736221873331175	CMakeFiles/pac-man.dir/src/main.cpp.obj	a81164ea7f9c666f
+1693	2241	7736221889684612	H:/Users/szcze/AppData/Local/Programs/VS Code projects/C++/pac-man/pac-man.exe	1d0a326681bd23da
+6	37	7736223722250256	H:/Users/szcze/AppData/Local/Programs/VS Code projects/C++/pac-man/build/clang/CMakeFiles/cmake.verify_globs	a8758b99943800fe
+80	1668	7736223723043631	CMakeFiles/pac-man.dir/src/pacman.cpp.obj	54dc4baec91899f5
+67	1744	7736223722912254	CMakeFiles/pac-man.dir/src/main.cpp.obj	a81164ea7f9c666f
+61	1746	7736223722836185	CMakeFiles/pac-man.dir/src/ghost.cpp.obj	94098023bc97963c
+1747	2308	7736223739722410	H:/Users/szcze/AppData/Local/Programs/VS Code projects/C++/pac-man/pac-man.exe	1d0a326681bd23da
+3	33	7736223948189063	H:/Users/szcze/AppData/Local/Programs/VS Code projects/C++/pac-man/build/clang/CMakeFiles/cmake.verify_globs	a8758b99943800fe
+76	1799	7736223948867666	CMakeFiles/pac-man.dir/src/pacman.cpp.obj	54dc4baec91899f5
+55	1849	7736223948633562	CMakeFiles/pac-man.dir/src/ghost.cpp.obj	94098023bc97963c
+62	1863	7736223948737364	CMakeFiles/pac-man.dir/src/main.cpp.obj	a81164ea7f9c666f
+1863	2385	7736223966737445	H:/Users/szcze/AppData/Local/Programs/VS Code projects/C++/pac-man/pac-man.exe	1d0a326681bd23da
+4	31	7736224170268745	H:/Users/szcze/AppData/Local/Programs/VS Code projects/C++/pac-man/build/clang/CMakeFiles/cmake.verify_globs	a8758b99943800fe
+68	1626	7736224170933582	CMakeFiles/pac-man.dir/src/pacman.cpp.obj	54dc4baec91899f5
+59	1692	7736224170848522	CMakeFiles/pac-man.dir/src/main.cpp.obj	a81164ea7f9c666f
+54	1713	7736224170793470	CMakeFiles/pac-man.dir/src/ghost.cpp.obj	94098023bc97963c
+1713	2227	7736224187389711	H:/Users/szcze/AppData/Local/Programs/VS Code projects/C++/pac-man/pac-man.exe	1d0a326681bd23da
+3	28	7736224410753017	H:/Users/szcze/AppData/Local/Programs/VS Code projects/C++/pac-man/build/clang/CMakeFiles/cmake.verify_globs	a8758b99943800fe
+65	1615	7736224411334087	CMakeFiles/pac-man.dir/src/pacman.cpp.obj	54dc4baec91899f5
+50	1687	7736224411238236	CMakeFiles/pac-man.dir/src/ghost.cpp.obj	94098023bc97963c
+56	1699	7736224411284063	CMakeFiles/pac-man.dir/src/main.cpp.obj	a81164ea7f9c666f
+1699	2239	7736224427735933	H:/Users/szcze/AppData/Local/Programs/VS Code projects/C++/pac-man/pac-man.exe	1d0a326681bd23da
+3	29	7736225911948002	H:/Users/szcze/AppData/Local/Programs/VS Code projects/C++/pac-man/build/clang/CMakeFiles/cmake.verify_globs	a8758b99943800fe
+50	1619	7736225912429989	CMakeFiles/pac-man.dir/src/main.cpp.obj	a81164ea7f9c666f
+1620	2149	7736225928129558	H:/Users/szcze/AppData/Local/Programs/VS Code projects/C++/pac-man/pac-man.exe	1d0a326681bd23da
+4	32	7736226190048423	H:/Users/szcze/AppData/Local/Programs/VS Code projects/C++/pac-man/build/clang/CMakeFiles/cmake.verify_globs	a8758b99943800fe
+54	1592	7736226190573530	CMakeFiles/pac-man.dir/src/main.cpp.obj	a81164ea7f9c666f
+1593	2121	7736226205930801	H:/Users/szcze/AppData/Local/Programs/VS Code projects/C++/pac-man/pac-man.exe	1d0a326681bd23da
+3	29	7736226827991862	H:/Users/szcze/AppData/Local/Programs/VS Code projects/C++/pac-man/build/clang/CMakeFiles/cmake.verify_globs	a8758b99943800fe
+3	30	7736228292480402	H:/Users/szcze/AppData/Local/Programs/VS Code projects/C++/pac-man/build/clang/CMakeFiles/cmake.verify_globs	a8758b99943800fe
+56	1598	7736228293014483	CMakeFiles/pac-man.dir/src/pacman.cpp.obj	54dc4baec91899f5
+51	1658	7736228292954468	CMakeFiles/pac-man.dir/src/main.cpp.obj	a81164ea7f9c666f
+1658	2178	7736228309027483	H:/Users/szcze/AppData/Local/Programs/VS Code projects/C++/pac-man/pac-man.exe	1d0a326681bd23da
+3	42	7736233581163344	H:/Users/szcze/AppData/Local/Programs/VS Code projects/C++/pac-man/build/clang/CMakeFiles/cmake.verify_globs	a8758b99943800fe
+3	29	7736233636682134	H:/Users/szcze/AppData/Local/Programs/VS Code projects/C++/pac-man/build/clang/CMakeFiles/cmake.verify_globs	a8758b99943800fe
+3	30	7736234023929211	H:/Users/szcze/AppData/Local/Programs/VS Code projects/C++/pac-man/build/clang/CMakeFiles/cmake.verify_globs	a8758b99943800fe
+3	30	7736234477544688	H:/Users/szcze/AppData/Local/Programs/VS Code projects/C++/pac-man/build/clang/CMakeFiles/cmake.verify_globs	a8758b99943800fe
+69	1681	7736234478195417	CMakeFiles/pac-man.dir/src/pacman.cpp.obj	54dc4baec91899f5
+58	1708	7736234478085227	CMakeFiles/pac-man.dir/src/main.cpp.obj	a81164ea7f9c666f
+52	1712	7736234478035213	CMakeFiles/pac-man.dir/src/ghost.cpp.obj	94098023bc97963c
+1712	2233	7736234494636303	H:/Users/szcze/AppData/Local/Programs/VS Code projects/C++/pac-man/pac-man.exe	1d0a326681bd23da
+4	38	7736235718429234	H:/Users/szcze/AppData/Local/Programs/VS Code projects/C++/pac-man/build/clang/CMakeFiles/cmake.verify_globs	a8758b99943800fe
+61	1712	7736235719001987	CMakeFiles/pac-man.dir/src/pacman.cpp.obj	54dc4baec91899f5
+1712	2220	7736235735511059	H:/Users/szcze/AppData/Local/Programs/VS Code projects/C++/pac-man/pac-man.exe	1d0a326681bd23da
+4	29	7736238465158883	H:/Users/szcze/AppData/Local/Programs/VS Code projects/C++/pac-man/build/clang/CMakeFiles/cmake.verify_globs	a8758b99943800fe
+3	28	7736238961578397	H:/Users/szcze/AppData/Local/Programs/VS Code projects/C++/pac-man/build/clang/CMakeFiles/cmake.verify_globs	a8758b99943800fe
+3	31	7736239536335798	H:/Users/szcze/AppData/Local/Programs/VS Code projects/C++/pac-man/build/clang/CMakeFiles/cmake.verify_globs	a8758b99943800fe
+72	1850	7736239537023616	CMakeFiles/pac-man.dir/src/pacman.cpp.obj	54dc4baec91899f5
+59	1867	7736239536898540	CMakeFiles/pac-man.dir/src/main.cpp.obj	a81164ea7f9c666f
+53	1935	7736239536833382	CMakeFiles/pac-man.dir/src/ghost.cpp.obj	94098023bc97963c
+1936	2459	7736239555653212	H:/Users/szcze/AppData/Local/Programs/VS Code projects/C++/pac-man/pac-man.exe	1d0a326681bd23da
